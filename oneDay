@@ -56,3 +56,12 @@ function getCode(obj,n){
 $('.btn').click(function(){
     return false //直接在方法里 return false 即可 
 })
+
+function checkLnk(str){
+  var pos = str.lastIndexOf('.lnk');
+  if(pos === -1){
+      return false;
+  }else{
+      return pos +4 === str.length;  
+   }
+}
